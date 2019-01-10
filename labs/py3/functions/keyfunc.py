@@ -57,6 +57,12 @@ def max_by_key(items, key):
         if key(item) >key(biggest):
             biggest =item
     return biggest
+    
+def count_vowels(s):
+    return count_chars(s, 'aeiou')
+
+ def fewest_vowels(items,key):
+    return min(items, key=count_vowels)
 
 
 
